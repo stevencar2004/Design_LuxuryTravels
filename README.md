@@ -15,5 +15,6 @@ The design was taken from a youtube video, from the AlexCG Desing channel, but t
 
 
 ### Layout Result
+[To Folder](https://github.com/stevencar2004/Design_LuxuryTravels/blob/main/Desing_layout/Desing.png)
 ![image](https://user-images.githubusercontent.com/66984715/151090722-e8cdb815-f024-4fd1-8d3e-646ce0e3bcb7.png)
 
