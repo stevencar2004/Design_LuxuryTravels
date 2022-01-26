@@ -1,0 +1,38 @@
+.fqa__item {
+	box-sizing: border-box;
+	width: 100%;
+	height: 85px;
+	padding: 15px 20px;
+	background-color: $white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid transparent;
+
+	&:hover {
+		cursor: pointer;
+		border: 1px solid $gray;
+	}
+}
+.fqa__controlls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.question__title {
+	font-size: 18px;
+}
+.question__text {
+	font-size: 15px;
+}
+
+.question--active {
+	overflow: unset;
+	height: auto;
+	transition: height 0.3s ease-in-out;
+	background-color: $orange;
+	.question__icon {
+		transition: rotate 0.3s ease;
+		transform: rotate(180deg);
+	}
+}

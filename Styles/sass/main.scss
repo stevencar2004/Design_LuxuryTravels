@@ -1,0 +1,47 @@
+@import "config/colors";
+@import "config/@button";
+//
+@import "layout/header";
+@import "layout/services";
+@import "layout/info";
+@import "layout/prices";
+@import "layout/questions";
+@import "layout/slider";
+@import "layout/footer";
+//
+@import "utils/banner_cookies";
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.text_highligther {
+	color: $orange;
+}
+
+.btn {
+	@include button;
+}
+
+.title {
+	text-align: center;
+	font-size: 38px;
+	margin-bottom: 40px;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 25px;
+}

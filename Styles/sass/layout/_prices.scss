@@ -1,0 +1,78 @@
+.prices {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.prices__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	gap: 20px;
+}
+.plan {
+	background-color: $white;
+	padding: 15px 20px;
+}
+.plan__title {
+	font-size: 22px;
+	text-align: center;
+}
+.plan__list {
+	margin-bottom: 30px;
+	li {
+		margin-bottom: 8px;
+	}
+}
+.plan__button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 25px;
+	outline: none;
+	border: 0;
+	border-radius: 15px;
+	background-color: $blue_light;
+	color: $white;
+	&:hover {
+		transition: background-color 0.3s ease;
+		background-color: $blue_dark;
+		cursor: pointer;
+	}
+}
+
+.plan--active {
+	background-color: $blue_dark;
+	color: $gray;
+
+	.plan__title {
+		color: $white;
+	}
+
+	.plan__button {
+		background-color: $orange_dark;
+		&:hover {
+			transition: background-color 0.3s ease;
+			background-color: $orange;
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.prices__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: unset;
+	}
+	.plan:last-of-type {
+		grid-column: 1/-1;
+	}
+}
+@media screen and (max-width: 640px) {
+	.prices__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.plan:last-of-type {
+		grid-column: 1/-1;
+	}
+}

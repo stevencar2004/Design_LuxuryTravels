@@ -1,0 +1,140 @@
+.footer {
+	background-color: $blue_dark;
+	padding: 50px 20px 15px 20px;
+	box-sizing: border-box;
+}
+
+.footer__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 40px;
+}
+
+.footer__info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.footer__brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: $white;
+}
+.footer__title {
+	font-size: 35px;
+}
+.footer__logo {
+	width: 150px;
+}
+.footer__idiom {
+	margin-top: 40px;
+}
+.footer__lenguage {
+	padding: 12px 25px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid $gray;
+	background-color: transparent;
+	color: $gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	font-size: 17px;
+
+	&:hover {
+		transition: background-color 0.3s ease;
+		background-color: $orange;
+		cursor: pointer;
+		color: #000;
+		border: 1px solid transparent;
+	}
+}
+.footer__flag {
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+}
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $white;
+}
+.subscribe__form {
+	width: 80%;
+	box-sizing: border-box;
+}
+.subscribe__label,
+.subscribe__input {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.subscribe__label {
+	font-size: 18px;
+	font-weight: 600;
+}
+.subscribe__input {
+	padding: 15px 10px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.subscribe__btn {
+	margin-top: 10px;
+}
+
+.footer__copy {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	border-top: 1px solid $gray;
+	padding-top: 20px;
+}
+.footer__rights {
+	font-size: 22px;
+}
+.footer__bar {
+	display: flex;
+	gap: 10px;
+	color: $gray;
+	i {
+		font-size: 22px;
+		&:hover {
+			transition: color 0.3s ease-in-out;
+			cursor: pointer;
+			color: $white;
+		}
+	}
+}
+@media screen and (max-width: 860px) {
+	.footer__wrapper {
+		grid-template-columns: 1fr;
+	}
+	.footer__brand {
+		justify-content: center;
+	}
+	.footer__title {
+		font-size: 30px;
+	}
+	.footer__logo {
+		width: 80px;
+	}
+	.footer__idiom {
+		margin-top: 20px;
+	}
+	.subscribe {
+		margin-top: 40px;
+	}
+	.subscribe__form {
+		width: 100%;
+	}
+}
